@@ -1,0 +1,8 @@
+* {
+  margin: 0;
+  user-select: auto;
+}
+
+.dg.ac {
+  z-index: 1 !important;
+}

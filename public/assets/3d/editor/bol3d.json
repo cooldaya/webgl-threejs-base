@@ -1,0 +1,1983 @@
+{
+  "data": [
+    {
+      "name": "页1",
+      "type": "page",
+      "selected": true,
+      "spread": false,
+      "uuid": "1",
+      "parent": "",
+      "children": [],
+      "threeDimension": [
+        {
+          "uuid": "root_chess_set_1k_0",
+          "name": "chess_set_1k",
+          "visible": true,
+          "selected": false,
+          "index": 0,
+          "spread": true,
+          "type": "Group",
+          "children": [
+            {
+              "uuid": "root_chess_set_1k_0_piece_pawn_black_07",
+              "name": "piece_pawn_black_07",
+              "visible": true,
+              "selected": false,
+              "index": 1,
+              "spread": false,
+              "type": "Mesh",
+              "children": [],
+              "options": {
+                "position": [-14.4355, 1.7393, 14.4377],
+                "rotation": [-90, 0, 0],
+                "scale": [100, 100, 100],
+                "renderOrder": 2,
+                "castShadow": true,
+                "receiveShadow": true,
+                "bloom": false
+              },
+              "show": true,
+              "parent": "root_chess_set_1k_0",
+              "events": [],
+              "matOptions": [
+                {
+                  "uuid": "9CBFA764-F157-41D1-8D87-3A331B0B196C",
+                  "type": "MeshStandardMaterial",
+                  "name": "chess_set_pieces_black",
+                  "color": "#cccccc",
+                  "transparent": false,
+                  "opacity": 1,
+                  "map": "",
+                  "depthTest": true,
+                  "depthWrite": true,
+                  "wireframe": false,
+                  "side": 0,
+                  "extends": {
+                    "roughnessMap": "",
+                    "roughness": 1,
+                    "metalnessMap": "",
+                    "metalness": 0,
+                    "normalMap": "",
+                    "normalScale": [1, 1],
+                    "alphaMap": "",
+                    "lightMap": "",
+                    "lightMapIntensity": 1,
+                    "emissive": "#000000",
+                    "emissiveMap": "",
+                    "emissiveIntensity": 1,
+                    "aoMap": "",
+                    "aoMapIntensity": 1
+                  }
+                }
+              ]
+            },
+            {
+              "uuid": "root_chess_set_1k_0_piece_knight_black_02",
+              "name": "piece_knight_black_02",
+              "visible": true,
+              "selected": false,
+              "index": 1,
+              "spread": false,
+              "type": "Mesh",
+              "children": [],
+              "options": {
+                "position": [-20.2243, 1.7393, 14.4377],
+                "rotation": [-90, 0, 0],
+                "scale": [100, 100, 100],
+                "renderOrder": 2,
+                "castShadow": true,
+                "receiveShadow": true,
+                "bloom": false
+              },
+              "show": true,
+              "parent": "root_chess_set_1k_0",
+              "events": [],
+              "matOptions": [
+                {
+                  "uuid": "633B39ED-7351-4238-80C2-099506DA31AE",
+                  "type": "MeshStandardMaterial",
+                  "name": "chess_set_pieces_black",
+                  "color": "#cccccc",
+                  "transparent": false,
+                  "opacity": 1,
+                  "map": "",
+                  "depthTest": true,
+                  "depthWrite": true,
+                  "wireframe": false,
+                  "side": 0,
+                  "extends": {
+                    "roughnessMap": "",
+                    "roughness": 1,
+                    "metalnessMap": "",
+                    "metalness": 0,
+                    "normalMap": "",
+                    "normalScale": [1, 1],
+                    "alphaMap": "",
+                    "lightMap": "",
+                    "lightMapIntensity": 1,
+                    "emissive": "#000000",
+                    "emissiveMap": "",
+                    "emissiveIntensity": 1,
+                    "aoMap": "",
+                    "aoMapIntensity": 1
+                  }
+                }
+              ]
+            },
+            {
+              "uuid": "root_chess_set_1k_0_piece_pawn_black_03",
+              "name": "piece_pawn_black_03",
+              "visible": true,
+              "selected": false,
+              "index": 1,
+              "spread": false,
+              "type": "Mesh",
+              "children": [],
+              "options": {
+                "position": [-14.4355, 1.7393, -8.7175],
+                "rotation": [-90, 0, 0],
+                "scale": [100, 100, 100],
+                "renderOrder": 2,
+                "castShadow": true,
+                "receiveShadow": true,
+                "bloom": false
+              },
+              "show": true,
+              "parent": "root_chess_set_1k_0",
+              "events": [],
+              "matOptions": [
+                {
+                  "uuid": "46EF4A98-5510-471C-BD1D-205A9552010C",
+                  "type": "MeshStandardMaterial",
+                  "name": "chess_set_pieces_black",
+                  "color": "#cccccc",
+                  "transparent": false,
+                  "opacity": 1,
+                  "map": "",
+                  "depthTest": true,
+                  "depthWrite": true,
+                  "wireframe": false,
+                  "side": 0,
+                  "extends": {
+                    "roughnessMap": "",
+                    "roughness": 1,
+                    "metalnessMap": "",
+                    "metalness": 0,
+                    "normalMap": "",
+                    "normalScale": [1, 1],
+                    "alphaMap": "",
+                    "lightMap": "",
+                    "lightMapIntensity": 1,
+                    "emissive": "#000000",
+                    "emissiveMap": "",
+                    "emissiveIntensity": 1,
+                    "aoMap": "",
+                    "aoMapIntensity": 1
+                  }
+                }
+              ]
+            },
+            {
+              "uuid": "root_chess_set_1k_0_piece_king_black",
+              "name": "piece_king_black",
+              "visible": true,
+              "selected": false,
+              "index": 1,
+              "spread": false,
+              "type": "Mesh",
+              "children": [],
+              "options": {
+                "position": [-20.2243, 1.7393, -2.9287],
+                "rotation": [-90, 0, 0],
+                "scale": [100, 100, 100],
+                "renderOrder": 2,
+                "castShadow": true,
+                "receiveShadow": true,
+                "bloom": false
+              },
+              "show": true,
+              "parent": "root_chess_set_1k_0",
+              "events": [],
+              "matOptions": [
+                {
+                  "uuid": "56DCAD7D-0B8B-46F7-B694-EBD1A52521F5",
+                  "type": "MeshStandardMaterial",
+                  "name": "chess_set_pieces_black",
+                  "color": "#cccccc",
+                  "transparent": false,
+                  "opacity": 1,
+                  "map": "",
+                  "depthTest": true,
+                  "depthWrite": true,
+                  "wireframe": false,
+                  "side": 0,
+                  "extends": {
+                    "roughnessMap": "",
+                    "roughness": 1,
+                    "metalnessMap": "",
+                    "metalness": 0,
+                    "normalMap": "",
+                    "normalScale": [1, 1],
+                    "alphaMap": "",
+                    "lightMap": "",
+                    "lightMapIntensity": 1,
+                    "emissive": "#000000",
+                    "emissiveMap": "",
+                    "emissiveIntensity": 1,
+                    "aoMap": "",
+                    "aoMapIntensity": 1
+                  }
+                }
+              ]
+            },
+            {
+              "uuid": "root_chess_set_1k_0_piece_bishop_black_02",
+              "name": "piece_bishop_black_02",
+              "visible": true,
+              "selected": false,
+              "index": 1,
+              "spread": false,
+              "type": "Mesh",
+              "children": [],
+              "options": {
+                "position": [-20.2243, 1.7393, 8.6489],
+                "rotation": [-90, 0, 0],
+                "scale": [100, 100, 100],
+                "renderOrder": 2,
+                "castShadow": true,
+                "receiveShadow": true,
+                "bloom": false
+              },
+              "show": true,
+              "parent": "root_chess_set_1k_0",
+              "events": [],
+              "matOptions": [
+                {
+                  "uuid": "65BACF17-4B45-4247-9BFB-159D86144C99",
+                  "type": "MeshStandardMaterial",
+                  "name": "chess_set_pieces_black",
+                  "color": "#cccccc",
+                  "transparent": false,
+                  "opacity": 1,
+                  "map": "",
+                  "depthTest": true,
+                  "depthWrite": true,
+                  "wireframe": false,
+                  "side": 0,
+                  "extends": {
+                    "roughnessMap": "",
+                    "roughness": 1,
+                    "metalnessMap": "",
+                    "metalness": 0,
+                    "normalMap": "",
+                    "normalScale": [1, 1],
+                    "alphaMap": "",
+                    "lightMap": "",
+                    "lightMapIntensity": 1,
+                    "emissive": "#000000",
+                    "emissiveMap": "",
+                    "emissiveIntensity": 1,
+                    "aoMap": "",
+                    "aoMapIntensity": 1
+                  }
+                }
+              ]
+            },
+            {
+              "uuid": "root_chess_set_1k_0_piece_pawn_black_06",
+              "name": "piece_pawn_black_06",
+              "visible": true,
+              "selected": false,
+              "index": 1,
+              "spread": false,
+              "type": "Mesh",
+              "children": [],
+              "options": {
+                "position": [-14.4355, 1.7393, 8.6489],
+                "rotation": [-90, 0, 0],
+                "scale": [100, 100, 100],
+                "renderOrder": 2,
+                "castShadow": true,
+                "receiveShadow": true,
+                "bloom": false
+              },
+              "show": true,
+              "parent": "root_chess_set_1k_0",
+              "events": [],
+              "matOptions": [
+                {
+                  "uuid": "D38135EE-1B40-417A-B5C3-A02F126A115C",
+                  "type": "MeshStandardMaterial",
+                  "name": "chess_set_pieces_black",
+                  "color": "#cccccc",
+                  "transparent": false,
+                  "opacity": 1,
+                  "map": "",
+                  "depthTest": true,
+                  "depthWrite": true,
+                  "wireframe": false,
+                  "side": 0,
+                  "extends": {
+                    "roughnessMap": "",
+                    "roughness": 1,
+                    "metalnessMap": "",
+                    "metalness": 0,
+                    "normalMap": "",
+                    "normalScale": [1, 1],
+                    "alphaMap": "",
+                    "lightMap": "",
+                    "lightMapIntensity": 1,
+                    "emissive": "#000000",
+                    "emissiveMap": "",
+                    "emissiveIntensity": 1,
+                    "aoMap": "",
+                    "aoMapIntensity": 1
+                  }
+                }
+              ]
+            },
+            {
+              "uuid": "root_chess_set_1k_0_piece_bishop_black_01",
+              "name": "piece_bishop_black_01",
+              "visible": true,
+              "selected": false,
+              "index": 1,
+              "spread": false,
+              "type": "Mesh",
+              "children": [],
+              "options": {
+                "position": [-20.2243, 1.7393, -8.7175],
+                "rotation": [-90, 0, 0],
+                "scale": [100, 100, 100],
+                "renderOrder": 2,
+                "castShadow": true,
+                "receiveShadow": true,
+                "bloom": false
+              },
+              "show": true,
+              "parent": "root_chess_set_1k_0",
+              "events": [],
+              "matOptions": [
+                {
+                  "uuid": "111C467B-D004-404F-97CD-FBD8A65D038C",
+                  "type": "MeshStandardMaterial",
+                  "name": "chess_set_pieces_black",
+                  "color": "#cccccc",
+                  "transparent": false,
+                  "opacity": 1,
+                  "map": "",
+                  "depthTest": true,
+                  "depthWrite": true,
+                  "wireframe": false,
+                  "side": 0,
+                  "extends": {
+                    "roughnessMap": "",
+                    "roughness": 1,
+                    "metalnessMap": "",
+                    "metalness": 0,
+                    "normalMap": "",
+                    "normalScale": [1, 1],
+                    "alphaMap": "",
+                    "lightMap": "",
+                    "lightMapIntensity": 1,
+                    "emissive": "#000000",
+                    "emissiveMap": "",
+                    "emissiveIntensity": 1,
+                    "aoMap": "",
+                    "aoMapIntensity": 1
+                  }
+                }
+              ]
+            },
+            {
+              "uuid": "root_chess_set_1k_0_piece_pawn_white_07",
+              "name": "piece_pawn_white_07",
+              "visible": true,
+              "selected": false,
+              "index": 1,
+              "spread": false,
+              "type": "Mesh",
+              "children": [],
+              "options": {
+                "position": [14.4377, 1.7393, -14.5064],
+                "rotation": [-90, 0, 0],
+                "scale": [100, 100, 100],
+                "renderOrder": 2,
+                "castShadow": true,
+                "receiveShadow": true,
+                "bloom": false
+              },
+              "show": true,
+              "parent": "root_chess_set_1k_0",
+              "events": [],
+              "matOptions": [
+                {
+                  "uuid": "AE63F683-9802-4E43-B8D2-A3DC06451D1C",
+                  "type": "MeshStandardMaterial",
+                  "name": "chess_set_pieces_white",
+                  "color": "#cccccc",
+                  "transparent": false,
+                  "opacity": 1,
+                  "map": "",
+                  "depthTest": true,
+                  "depthWrite": true,
+                  "wireframe": false,
+                  "side": 0,
+                  "extends": {
+                    "roughnessMap": "",
+                    "roughness": 1,
+                    "metalnessMap": "",
+                    "metalness": 0,
+                    "normalMap": "",
+                    "normalScale": [1, 1],
+                    "alphaMap": "",
+                    "lightMap": "",
+                    "lightMapIntensity": 1,
+                    "emissive": "#000000",
+                    "emissiveMap": "",
+                    "emissiveIntensity": 1,
+                    "aoMap": "",
+                    "aoMapIntensity": 1
+                  }
+                }
+              ]
+            },
+            {
+              "uuid": "root_chess_set_1k_0_piece_pawn_white_04",
+              "name": "piece_pawn_white_04",
+              "visible": true,
+              "selected": false,
+              "index": 1,
+              "spread": false,
+              "type": "Mesh",
+              "children": [],
+              "options": {
+                "position": [14.4377, 1.7393, 2.8601],
+                "rotation": [-90, 0, 0],
+                "scale": [100, 100, 100],
+                "renderOrder": 2,
+                "castShadow": true,
+                "receiveShadow": true,
+                "bloom": false
+              },
+              "show": true,
+              "parent": "root_chess_set_1k_0",
+              "events": [],
+              "matOptions": [
+                {
+                  "uuid": "088FDC44-2F8A-424F-8133-3FAB62E4DED5",
+                  "type": "MeshStandardMaterial",
+                  "name": "chess_set_pieces_white",
+                  "color": "#cccccc",
+                  "transparent": false,
+                  "opacity": 1,
+                  "map": "",
+                  "depthTest": true,
+                  "depthWrite": true,
+                  "wireframe": false,
+                  "side": 0,
+                  "extends": {
+                    "roughnessMap": "",
+                    "roughness": 1,
+                    "metalnessMap": "",
+                    "metalness": 0,
+                    "normalMap": "",
+                    "normalScale": [1, 1],
+                    "alphaMap": "",
+                    "lightMap": "",
+                    "lightMapIntensity": 1,
+                    "emissive": "#000000",
+                    "emissiveMap": "",
+                    "emissiveIntensity": 1,
+                    "aoMap": "",
+                    "aoMapIntensity": 1
+                  }
+                }
+              ]
+            },
+            {
+              "uuid": "root_chess_set_1k_0_piece_pawn_black_01",
+              "name": "piece_pawn_black_01",
+              "visible": true,
+              "selected": false,
+              "index": 1,
+              "spread": false,
+              "type": "Mesh",
+              "children": [],
+              "options": {
+                "position": [-14.4355, 1.7393, -20.2952],
+                "rotation": [-90, 0, 0],
+                "scale": [100, 100, 100],
+                "renderOrder": 2,
+                "castShadow": true,
+                "receiveShadow": true,
+                "bloom": false
+              },
+              "show": true,
+              "parent": "root_chess_set_1k_0",
+              "events": [],
+              "matOptions": [
+                {
+                  "uuid": "A9311CAA-B0DA-4C27-86AD-076ED8B82925",
+                  "type": "MeshStandardMaterial",
+                  "name": "chess_set_pieces_black",
+                  "color": "#cccccc",
+                  "transparent": false,
+                  "opacity": 1,
+                  "map": "",
+                  "depthTest": true,
+                  "depthWrite": true,
+                  "wireframe": false,
+                  "side": 0,
+                  "extends": {
+                    "roughnessMap": "",
+                    "roughness": 1,
+                    "metalnessMap": "",
+                    "metalness": 0,
+                    "normalMap": "",
+                    "normalScale": [1, 1],
+                    "alphaMap": "",
+                    "lightMap": "",
+                    "lightMapIntensity": 1,
+                    "emissive": "#000000",
+                    "emissiveMap": "",
+                    "emissiveIntensity": 1,
+                    "aoMap": "",
+                    "aoMapIntensity": 1
+                  }
+                }
+              ]
+            },
+            {
+              "uuid": "root_chess_set_1k_0_piece_pawn_black_08",
+              "name": "piece_pawn_black_08",
+              "visible": true,
+              "selected": false,
+              "index": 1,
+              "spread": false,
+              "type": "Mesh",
+              "children": [],
+              "options": {
+                "position": [-14.4355, 1.7393, 20.2265],
+                "rotation": [-90, 0, 0],
+                "scale": [100, 100, 100],
+                "renderOrder": 2,
+                "castShadow": true,
+                "receiveShadow": true,
+                "bloom": false
+              },
+              "show": true,
+              "parent": "root_chess_set_1k_0",
+              "events": [],
+              "matOptions": [
+                {
+                  "uuid": "F94C2836-B4C8-4749-9C77-E0D14DE14A3E",
+                  "type": "MeshStandardMaterial",
+                  "name": "chess_set_pieces_black",
+                  "color": "#cccccc",
+                  "transparent": false,
+                  "opacity": 1,
+                  "map": "",
+                  "depthTest": true,
+                  "depthWrite": true,
+                  "wireframe": false,
+                  "side": 0,
+                  "extends": {
+                    "roughnessMap": "",
+                    "roughness": 1,
+                    "metalnessMap": "",
+                    "metalness": 0,
+                    "normalMap": "",
+                    "normalScale": [1, 1],
+                    "alphaMap": "",
+                    "lightMap": "",
+                    "lightMapIntensity": 1,
+                    "emissive": "#000000",
+                    "emissiveMap": "",
+                    "emissiveIntensity": 1,
+                    "aoMap": "",
+                    "aoMapIntensity": 1
+                  }
+                }
+              ]
+            },
+            {
+              "uuid": "root_chess_set_1k_0_piece_knight_white_01",
+              "name": "piece_knight_white_01",
+              "visible": true,
+              "selected": false,
+              "index": 1,
+              "spread": false,
+              "type": "Mesh",
+              "children": [],
+              "options": {
+                "position": [20.2265, 1.7393, 14.4377],
+                "rotation": [-90, 0, 0],
+                "scale": [100, 100, 100],
+                "renderOrder": 2,
+                "castShadow": true,
+                "receiveShadow": true,
+                "bloom": false
+              },
+              "show": true,
+              "parent": "root_chess_set_1k_0",
+              "events": [],
+              "matOptions": [
+                {
+                  "uuid": "1F114560-064C-435D-9DEC-C253C2E37FEF",
+                  "type": "MeshStandardMaterial",
+                  "name": "chess_set_pieces_white",
+                  "color": "#cccccc",
+                  "transparent": false,
+                  "opacity": 1,
+                  "map": "",
+                  "depthTest": true,
+                  "depthWrite": true,
+                  "wireframe": false,
+                  "side": 0,
+                  "extends": {
+                    "roughnessMap": "",
+                    "roughness": 1,
+                    "metalnessMap": "",
+                    "metalness": 0,
+                    "normalMap": "",
+                    "normalScale": [1, 1],
+                    "alphaMap": "",
+                    "lightMap": "",
+                    "lightMapIntensity": 1,
+                    "emissive": "#000000",
+                    "emissiveMap": "",
+                    "emissiveIntensity": 1,
+                    "aoMap": "",
+                    "aoMapIntensity": 1
+                  }
+                }
+              ]
+            },
+            {
+              "uuid": "root_chess_set_1k_0_piece_rook_black_02",
+              "name": "piece_rook_black_02",
+              "visible": true,
+              "selected": false,
+              "index": 1,
+              "spread": false,
+              "type": "Mesh",
+              "children": [],
+              "options": {
+                "position": [-20.2243, 1.7393, 20.2265],
+                "rotation": [-90, 0, 0],
+                "scale": [100, 100, 100],
+                "renderOrder": 2,
+                "castShadow": true,
+                "receiveShadow": true,
+                "bloom": false
+              },
+              "show": true,
+              "parent": "root_chess_set_1k_0",
+              "events": [],
+              "matOptions": [
+                {
+                  "uuid": "DE1859D3-2BC5-48AA-9E0C-1F76FA4266A1",
+                  "type": "MeshStandardMaterial",
+                  "name": "chess_set_pieces_black",
+                  "color": "#cccccc",
+                  "transparent": false,
+                  "opacity": 1,
+                  "map": "",
+                  "depthTest": true,
+                  "depthWrite": true,
+                  "wireframe": false,
+                  "side": 0,
+                  "extends": {
+                    "roughnessMap": "",
+                    "roughness": 1,
+                    "metalnessMap": "",
+                    "metalness": 0,
+                    "normalMap": "",
+                    "normalScale": [1, 1],
+                    "alphaMap": "",
+                    "lightMap": "",
+                    "lightMapIntensity": 1,
+                    "emissive": "#000000",
+                    "emissiveMap": "",
+                    "emissiveIntensity": 1,
+                    "aoMap": "",
+                    "aoMapIntensity": 1
+                  }
+                }
+              ]
+            },
+            {
+              "uuid": "root_chess_set_1k_0_piece_pawn_black_04",
+              "name": "piece_pawn_black_04",
+              "visible": true,
+              "selected": false,
+              "index": 1,
+              "spread": false,
+              "type": "Mesh",
+              "children": [],
+              "options": {
+                "position": [-14.4355, 1.7393, -2.9287],
+                "rotation": [-90, 0, 0],
+                "scale": [100, 100, 100],
+                "renderOrder": 2,
+                "castShadow": true,
+                "receiveShadow": true,
+                "bloom": false
+              },
+              "show": true,
+              "parent": "root_chess_set_1k_0",
+              "events": [],
+              "matOptions": [
+                {
+                  "uuid": "B379AC0E-7171-4917-BF6A-1626491B2194",
+                  "type": "MeshStandardMaterial",
+                  "name": "chess_set_pieces_black",
+                  "color": "#cccccc",
+                  "transparent": false,
+                  "opacity": 1,
+                  "map": "",
+                  "depthTest": true,
+                  "depthWrite": true,
+                  "wireframe": false,
+                  "side": 0,
+                  "extends": {
+                    "roughnessMap": "",
+                    "roughness": 1,
+                    "metalnessMap": "",
+                    "metalness": 0,
+                    "normalMap": "",
+                    "normalScale": [1, 1],
+                    "alphaMap": "",
+                    "lightMap": "",
+                    "lightMapIntensity": 1,
+                    "emissive": "#000000",
+                    "emissiveMap": "",
+                    "emissiveIntensity": 1,
+                    "aoMap": "",
+                    "aoMapIntensity": 1
+                  }
+                }
+              ]
+            },
+            {
+              "uuid": "root_chess_set_1k_0_piece_pawn_white_08",
+              "name": "piece_pawn_white_08",
+              "visible": true,
+              "selected": false,
+              "index": 1,
+              "spread": false,
+              "type": "Mesh",
+              "children": [],
+              "options": {
+                "position": [14.4377, 1.7393, -20.2952],
+                "rotation": [-90, 0, 0],
+                "scale": [100, 100, 100],
+                "renderOrder": 2,
+                "castShadow": true,
+                "receiveShadow": true,
+                "bloom": false
+              },
+              "show": true,
+              "parent": "root_chess_set_1k_0",
+              "events": [],
+              "matOptions": [
+                {
+                  "uuid": "2B3FEF27-4936-4496-96B7-087AFEEDF813",
+                  "type": "MeshStandardMaterial",
+                  "name": "chess_set_pieces_white",
+                  "color": "#cccccc",
+                  "transparent": false,
+                  "opacity": 1,
+                  "map": "",
+                  "depthTest": true,
+                  "depthWrite": true,
+                  "wireframe": false,
+                  "side": 0,
+                  "extends": {
+                    "roughnessMap": "",
+                    "roughness": 1,
+                    "metalnessMap": "",
+                    "metalness": 0,
+                    "normalMap": "",
+                    "normalScale": [1, 1],
+                    "alphaMap": "",
+                    "lightMap": "",
+                    "lightMapIntensity": 1,
+                    "emissive": "#000000",
+                    "emissiveMap": "",
+                    "emissiveIntensity": 1,
+                    "aoMap": "",
+                    "aoMapIntensity": 1
+                  }
+                }
+              ]
+            },
+            {
+              "uuid": "root_chess_set_1k_0_piece_pawn_white_06",
+              "name": "piece_pawn_white_06",
+              "visible": true,
+              "selected": false,
+              "index": 1,
+              "spread": false,
+              "type": "Mesh",
+              "children": [],
+              "options": {
+                "position": [14.4377, 1.7393, -8.7176],
+                "rotation": [-90, 0, 0],
+                "scale": [100, 100, 100],
+                "renderOrder": 2,
+                "castShadow": true,
+                "receiveShadow": true,
+                "bloom": false
+              },
+              "show": true,
+              "parent": "root_chess_set_1k_0",
+              "events": [],
+              "matOptions": [
+                {
+                  "uuid": "0EAA686E-1DFA-4673-A526-B90F242ABE6E",
+                  "type": "MeshStandardMaterial",
+                  "name": "chess_set_pieces_white",
+                  "color": "#cccccc",
+                  "transparent": false,
+                  "opacity": 1,
+                  "map": "",
+                  "depthTest": true,
+                  "depthWrite": true,
+                  "wireframe": false,
+                  "side": 0,
+                  "extends": {
+                    "roughnessMap": "",
+                    "roughness": 1,
+                    "metalnessMap": "",
+                    "metalness": 0,
+                    "normalMap": "",
+                    "normalScale": [1, 1],
+                    "alphaMap": "",
+                    "lightMap": "",
+                    "lightMapIntensity": 1,
+                    "emissive": "#000000",
+                    "emissiveMap": "",
+                    "emissiveIntensity": 1,
+                    "aoMap": "",
+                    "aoMapIntensity": 1
+                  }
+                }
+              ]
+            },
+            {
+              "uuid": "root_chess_set_1k_0_board",
+              "name": "board",
+              "visible": true,
+              "selected": true,
+              "index": 1,
+              "spread": false,
+              "type": "Mesh",
+              "children": [],
+              "options": {
+                "position": [-0.0343, 0, -0.0343],
+                "rotation": [-90, 0, 0],
+                "scale": [100, 100, 100],
+                "renderOrder": 2,
+                "castShadow": true,
+                "receiveShadow": true,
+                "bloom": false
+              },
+              "show": true,
+              "parent": "root_chess_set_1k_0",
+              "events": [],
+              "matOptions": [
+                {
+                  "uuid": "656F0CD2-9946-43F1-B913-DE9EBF00C530",
+                  "type": "MeshStandardMaterial",
+                  "name": "chess_set_board",
+                  "color": "#cccccc",
+                  "transparent": false,
+                  "opacity": 1,
+                  "map": "chess_set_board_diff_1k.png",
+                  "depthTest": true,
+                  "depthWrite": true,
+                  "wireframe": false,
+                  "side": 0,
+                  "extends": {
+                    "roughnessMap": "",
+                    "roughness": 1,
+                    "metalnessMap": "",
+                    "metalness": 0,
+                    "normalMap": "",
+                    "normalScale": [1, 1],
+                    "alphaMap": "",
+                    "lightMap": "",
+                    "lightMapIntensity": 1,
+                    "emissive": "#000000",
+                    "emissiveMap": "",
+                    "emissiveIntensity": 1,
+                    "aoMap": "",
+                    "aoMapIntensity": 1
+                  }
+                }
+              ]
+            },
+            {
+              "uuid": "root_chess_set_1k_0_piece_pawn_white_02",
+              "name": "piece_pawn_white_02",
+              "visible": true,
+              "selected": false,
+              "index": 1,
+              "spread": false,
+              "type": "Mesh",
+              "children": [],
+              "options": {
+                "position": [14.4377, 1.7393, 14.4377],
+                "rotation": [-90, 0, 0],
+                "scale": [100, 100, 100],
+                "renderOrder": 2,
+                "castShadow": true,
+                "receiveShadow": true,
+                "bloom": false
+              },
+              "show": true,
+              "parent": "root_chess_set_1k_0",
+              "events": [],
+              "matOptions": [
+                {
+                  "uuid": "789C5092-39CE-46BE-AC99-A8DADF8BD594",
+                  "type": "MeshStandardMaterial",
+                  "name": "chess_set_pieces_white",
+                  "color": "#cccccc",
+                  "transparent": false,
+                  "opacity": 1,
+                  "map": "",
+                  "depthTest": true,
+                  "depthWrite": true,
+                  "wireframe": false,
+                  "side": 0,
+                  "extends": {
+                    "roughnessMap": "",
+                    "roughness": 1,
+                    "metalnessMap": "",
+                    "metalness": 0,
+                    "normalMap": "",
+                    "normalScale": [1, 1],
+                    "alphaMap": "",
+                    "lightMap": "",
+                    "lightMapIntensity": 1,
+                    "emissive": "#000000",
+                    "emissiveMap": "",
+                    "emissiveIntensity": 1,
+                    "aoMap": "",
+                    "aoMapIntensity": 1
+                  }
+                }
+              ]
+            },
+            {
+              "uuid": "root_chess_set_1k_0_piece_rook_white_02",
+              "name": "piece_rook_white_02",
+              "visible": true,
+              "selected": false,
+              "index": 1,
+              "spread": false,
+              "type": "Mesh",
+              "children": [],
+              "options": {
+                "position": [20.2265, 1.7393, -20.2952],
+                "rotation": [-90, 0, 0],
+                "scale": [100, 100, 100],
+                "renderOrder": 2,
+                "castShadow": true,
+                "receiveShadow": true,
+                "bloom": false
+              },
+              "show": true,
+              "parent": "root_chess_set_1k_0",
+              "events": [],
+              "matOptions": [
+                {
+                  "uuid": "3EF24C51-AEAD-4E12-B681-56D8C1E6F4AB",
+                  "type": "MeshStandardMaterial",
+                  "name": "chess_set_pieces_white",
+                  "color": "#cccccc",
+                  "transparent": false,
+                  "opacity": 1,
+                  "map": "",
+                  "depthTest": true,
+                  "depthWrite": true,
+                  "wireframe": false,
+                  "side": 0,
+                  "extends": {
+                    "roughnessMap": "",
+                    "roughness": 1,
+                    "metalnessMap": "",
+                    "metalness": 0,
+                    "normalMap": "",
+                    "normalScale": [1, 1],
+                    "alphaMap": "",
+                    "lightMap": "",
+                    "lightMapIntensity": 1,
+                    "emissive": "#000000",
+                    "emissiveMap": "",
+                    "emissiveIntensity": 1,
+                    "aoMap": "",
+                    "aoMapIntensity": 1
+                  }
+                }
+              ]
+            },
+            {
+              "uuid": "root_chess_set_1k_0_piece_knight_white_02",
+              "name": "piece_knight_white_02",
+              "visible": true,
+              "selected": false,
+              "index": 1,
+              "spread": false,
+              "type": "Mesh",
+              "children": [],
+              "options": {
+                "position": [20.2265, 1.7393, -14.5064],
+                "rotation": [-90, 0, 0],
+                "scale": [100, 100, 100],
+                "renderOrder": 2,
+                "castShadow": true,
+                "receiveShadow": true,
+                "bloom": false
+              },
+              "show": true,
+              "parent": "root_chess_set_1k_0",
+              "events": [],
+              "matOptions": [
+                {
+                  "uuid": "3CD17EED-F84E-473A-9355-667D49894AE2",
+                  "type": "MeshStandardMaterial",
+                  "name": "chess_set_pieces_white",
+                  "color": "#cccccc",
+                  "transparent": false,
+                  "opacity": 1,
+                  "map": "",
+                  "depthTest": true,
+                  "depthWrite": true,
+                  "wireframe": false,
+                  "side": 0,
+                  "extends": {
+                    "roughnessMap": "",
+                    "roughness": 1,
+                    "metalnessMap": "",
+                    "metalness": 0,
+                    "normalMap": "",
+                    "normalScale": [1, 1],
+                    "alphaMap": "",
+                    "lightMap": "",
+                    "lightMapIntensity": 1,
+                    "emissive": "#000000",
+                    "emissiveMap": "",
+                    "emissiveIntensity": 1,
+                    "aoMap": "",
+                    "aoMapIntensity": 1
+                  }
+                }
+              ]
+            },
+            {
+              "uuid": "root_chess_set_1k_0_piece_rook_white_01",
+              "name": "piece_rook_white_01",
+              "visible": true,
+              "selected": false,
+              "index": 1,
+              "spread": false,
+              "type": "Mesh",
+              "children": [],
+              "options": {
+                "position": [20.2265, 1.7393, 20.2265],
+                "rotation": [-90, 0, 0],
+                "scale": [100, 100, 100],
+                "renderOrder": 2,
+                "castShadow": true,
+                "receiveShadow": true,
+                "bloom": false
+              },
+              "show": true,
+              "parent": "root_chess_set_1k_0",
+              "events": [],
+              "matOptions": [
+                {
+                  "uuid": "DE3E93F0-4DB4-4834-B6ED-EB5F133982E1",
+                  "type": "MeshStandardMaterial",
+                  "name": "chess_set_pieces_white",
+                  "color": "#cccccc",
+                  "transparent": false,
+                  "opacity": 1,
+                  "map": "",
+                  "depthTest": true,
+                  "depthWrite": true,
+                  "wireframe": false,
+                  "side": 0,
+                  "extends": {
+                    "roughnessMap": "",
+                    "roughness": 1,
+                    "metalnessMap": "",
+                    "metalness": 0,
+                    "normalMap": "",
+                    "normalScale": [1, 1],
+                    "alphaMap": "",
+                    "lightMap": "",
+                    "lightMapIntensity": 1,
+                    "emissive": "#000000",
+                    "emissiveMap": "",
+                    "emissiveIntensity": 1,
+                    "aoMap": "",
+                    "aoMapIntensity": 1
+                  }
+                }
+              ]
+            },
+            {
+              "uuid": "root_chess_set_1k_0_piece_pawn_black_05",
+              "name": "piece_pawn_black_05",
+              "visible": true,
+              "selected": false,
+              "index": 1,
+              "spread": false,
+              "type": "Mesh",
+              "children": [],
+              "options": {
+                "position": [-14.4355, 1.7393, 2.8601],
+                "rotation": [-90, 0, 0],
+                "scale": [100, 100, 100],
+                "renderOrder": 2,
+                "castShadow": true,
+                "receiveShadow": true,
+                "bloom": false
+              },
+              "show": true,
+              "parent": "root_chess_set_1k_0",
+              "events": [],
+              "matOptions": [
+                {
+                  "uuid": "C0D7125E-6D20-4188-8DC2-F6D1DB645537",
+                  "type": "MeshStandardMaterial",
+                  "name": "chess_set_pieces_black",
+                  "color": "#cccccc",
+                  "transparent": false,
+                  "opacity": 1,
+                  "map": "",
+                  "depthTest": true,
+                  "depthWrite": true,
+                  "wireframe": false,
+                  "side": 0,
+                  "extends": {
+                    "roughnessMap": "",
+                    "roughness": 1,
+                    "metalnessMap": "",
+                    "metalness": 0,
+                    "normalMap": "",
+                    "normalScale": [1, 1],
+                    "alphaMap": "",
+                    "lightMap": "",
+                    "lightMapIntensity": 1,
+                    "emissive": "#000000",
+                    "emissiveMap": "",
+                    "emissiveIntensity": 1,
+                    "aoMap": "",
+                    "aoMapIntensity": 1
+                  }
+                }
+              ]
+            },
+            {
+              "uuid": "root_chess_set_1k_0_piece_pawn_white_03",
+              "name": "piece_pawn_white_03",
+              "visible": true,
+              "selected": false,
+              "index": 1,
+              "spread": false,
+              "type": "Mesh",
+              "children": [],
+              "options": {
+                "position": [14.4377, 1.7393, 8.6489],
+                "rotation": [-90, 0, 0],
+                "scale": [100, 100, 100],
+                "renderOrder": 2,
+                "castShadow": true,
+                "receiveShadow": true,
+                "bloom": false
+              },
+              "show": true,
+              "parent": "root_chess_set_1k_0",
+              "events": [],
+              "matOptions": [
+                {
+                  "uuid": "40EE62C6-EAF3-4E04-823B-7F23FBF03468",
+                  "type": "MeshStandardMaterial",
+                  "name": "chess_set_pieces_white",
+                  "color": "#cccccc",
+                  "transparent": false,
+                  "opacity": 1,
+                  "map": "",
+                  "depthTest": true,
+                  "depthWrite": true,
+                  "wireframe": false,
+                  "side": 0,
+                  "extends": {
+                    "roughnessMap": "",
+                    "roughness": 1,
+                    "metalnessMap": "",
+                    "metalness": 0,
+                    "normalMap": "",
+                    "normalScale": [1, 1],
+                    "alphaMap": "",
+                    "lightMap": "",
+                    "lightMapIntensity": 1,
+                    "emissive": "#000000",
+                    "emissiveMap": "",
+                    "emissiveIntensity": 1,
+                    "aoMap": "",
+                    "aoMapIntensity": 1
+                  }
+                }
+              ]
+            },
+            {
+              "uuid": "root_chess_set_1k_0_piece_queen_white",
+              "name": "piece_queen_white",
+              "visible": true,
+              "selected": false,
+              "index": 1,
+              "spread": false,
+              "type": "Mesh",
+              "children": [],
+              "options": {
+                "position": [20.2265, 1.7393, -2.9287],
+                "rotation": [-90, 0, 0],
+                "scale": [100, 100, 100],
+                "renderOrder": 2,
+                "castShadow": true,
+                "receiveShadow": true,
+                "bloom": false
+              },
+              "show": true,
+              "parent": "root_chess_set_1k_0",
+              "events": [],
+              "matOptions": [
+                {
+                  "uuid": "4A990703-4BF9-41CD-BC07-59706683660E",
+                  "type": "MeshStandardMaterial",
+                  "name": "chess_set_pieces_white",
+                  "color": "#cccccc",
+                  "transparent": false,
+                  "opacity": 1,
+                  "map": "",
+                  "depthTest": true,
+                  "depthWrite": true,
+                  "wireframe": false,
+                  "side": 0,
+                  "extends": {
+                    "roughnessMap": "",
+                    "roughness": 1,
+                    "metalnessMap": "",
+                    "metalness": 0,
+                    "normalMap": "",
+                    "normalScale": [1, 1],
+                    "alphaMap": "",
+                    "lightMap": "",
+                    "lightMapIntensity": 1,
+                    "emissive": "#000000",
+                    "emissiveMap": "",
+                    "emissiveIntensity": 1,
+                    "aoMap": "",
+                    "aoMapIntensity": 1
+                  }
+                }
+              ]
+            },
+            {
+              "uuid": "root_chess_set_1k_0_piece_knight_black_01",
+              "name": "piece_knight_black_01",
+              "visible": true,
+              "selected": false,
+              "index": 1,
+              "spread": false,
+              "type": "Mesh",
+              "children": [],
+              "options": {
+                "position": [-20.2243, 1.7393, -14.5064],
+                "rotation": [-90, 0, 0],
+                "scale": [100, 100, 100],
+                "renderOrder": 2,
+                "castShadow": true,
+                "receiveShadow": true,
+                "bloom": false
+              },
+              "show": true,
+              "parent": "root_chess_set_1k_0",
+              "events": [],
+              "matOptions": [
+                {
+                  "uuid": "66C9F5CD-8F3D-460B-9085-136E25B8BF76",
+                  "type": "MeshStandardMaterial",
+                  "name": "chess_set_pieces_black",
+                  "color": "#cccccc",
+                  "transparent": false,
+                  "opacity": 1,
+                  "map": "",
+                  "depthTest": true,
+                  "depthWrite": true,
+                  "wireframe": false,
+                  "side": 0,
+                  "extends": {
+                    "roughnessMap": "",
+                    "roughness": 1,
+                    "metalnessMap": "",
+                    "metalness": 0,
+                    "normalMap": "",
+                    "normalScale": [1, 1],
+                    "alphaMap": "",
+                    "lightMap": "",
+                    "lightMapIntensity": 1,
+                    "emissive": "#000000",
+                    "emissiveMap": "",
+                    "emissiveIntensity": 1,
+                    "aoMap": "",
+                    "aoMapIntensity": 1
+                  }
+                }
+              ]
+            },
+            {
+              "uuid": "root_chess_set_1k_0_piece_pawn_white_05",
+              "name": "piece_pawn_white_05",
+              "visible": true,
+              "selected": false,
+              "index": 1,
+              "spread": false,
+              "type": "Mesh",
+              "children": [],
+              "options": {
+                "position": [14.4377, 1.7393, -2.9287],
+                "rotation": [-90, 0, 0],
+                "scale": [100, 100, 100],
+                "renderOrder": 2,
+                "castShadow": true,
+                "receiveShadow": true,
+                "bloom": false
+              },
+              "show": true,
+              "parent": "root_chess_set_1k_0",
+              "events": [],
+              "matOptions": [
+                {
+                  "uuid": "D969FBF5-7B8F-463E-9157-F7439D7151B2",
+                  "type": "MeshStandardMaterial",
+                  "name": "chess_set_pieces_white",
+                  "color": "#cccccc",
+                  "transparent": false,
+                  "opacity": 1,
+                  "map": "",
+                  "depthTest": true,
+                  "depthWrite": true,
+                  "wireframe": false,
+                  "side": 0,
+                  "extends": {
+                    "roughnessMap": "",
+                    "roughness": 1,
+                    "metalnessMap": "",
+                    "metalness": 0,
+                    "normalMap": "",
+                    "normalScale": [1, 1],
+                    "alphaMap": "",
+                    "lightMap": "",
+                    "lightMapIntensity": 1,
+                    "emissive": "#000000",
+                    "emissiveMap": "",
+                    "emissiveIntensity": 1,
+                    "aoMap": "",
+                    "aoMapIntensity": 1
+                  }
+                }
+              ]
+            },
+            {
+              "uuid": "root_chess_set_1k_0_piece_queen_black",
+              "name": "piece_queen_black",
+              "visible": true,
+              "selected": false,
+              "index": 1,
+              "spread": false,
+              "type": "Mesh",
+              "children": [],
+              "options": {
+                "position": [-20.2243, 1.7393, 2.8601],
+                "rotation": [-90, 0, 0],
+                "scale": [100, 100, 100],
+                "renderOrder": 2,
+                "castShadow": true,
+                "receiveShadow": true,
+                "bloom": false
+              },
+              "show": true,
+              "parent": "root_chess_set_1k_0",
+              "events": [],
+              "matOptions": [
+                {
+                  "uuid": "246F3963-17F8-4ADD-9DAA-66F158D86700",
+                  "type": "MeshStandardMaterial",
+                  "name": "chess_set_pieces_black",
+                  "color": "#cccccc",
+                  "transparent": false,
+                  "opacity": 1,
+                  "map": "",
+                  "depthTest": true,
+                  "depthWrite": true,
+                  "wireframe": false,
+                  "side": 0,
+                  "extends": {
+                    "roughnessMap": "",
+                    "roughness": 1,
+                    "metalnessMap": "",
+                    "metalness": 0,
+                    "normalMap": "",
+                    "normalScale": [1, 1],
+                    "alphaMap": "",
+                    "lightMap": "",
+                    "lightMapIntensity": 1,
+                    "emissive": "#000000",
+                    "emissiveMap": "",
+                    "emissiveIntensity": 1,
+                    "aoMap": "",
+                    "aoMapIntensity": 1
+                  }
+                }
+              ]
+            },
+            {
+              "uuid": "root_chess_set_1k_0_piece_pawn_white_01",
+              "name": "piece_pawn_white_01",
+              "visible": true,
+              "selected": false,
+              "index": 1,
+              "spread": false,
+              "type": "Mesh",
+              "children": [],
+              "options": {
+                "position": [14.4377, 1.7393, 20.2265],
+                "rotation": [-90, 0, 0],
+                "scale": [100, 100, 100],
+                "renderOrder": 2,
+                "castShadow": true,
+                "receiveShadow": true,
+                "bloom": false
+              },
+              "show": true,
+              "parent": "root_chess_set_1k_0",
+              "events": [],
+              "matOptions": [
+                {
+                  "uuid": "9CDE7FBF-7C33-4E01-A4FC-218C97F98646",
+                  "type": "MeshStandardMaterial",
+                  "name": "chess_set_pieces_white",
+                  "color": "#cccccc",
+                  "transparent": false,
+                  "opacity": 1,
+                  "map": "",
+                  "depthTest": true,
+                  "depthWrite": true,
+                  "wireframe": false,
+                  "side": 0,
+                  "extends": {
+                    "roughnessMap": "",
+                    "roughness": 1,
+                    "metalnessMap": "",
+                    "metalness": 0,
+                    "normalMap": "",
+                    "normalScale": [1, 1],
+                    "alphaMap": "",
+                    "lightMap": "",
+                    "lightMapIntensity": 1,
+                    "emissive": "#000000",
+                    "emissiveMap": "",
+                    "emissiveIntensity": 1,
+                    "aoMap": "",
+                    "aoMapIntensity": 1
+                  }
+                }
+              ]
+            },
+            {
+              "uuid": "root_chess_set_1k_0_piece_king_white",
+              "name": "piece_king_white",
+              "visible": true,
+              "selected": false,
+              "index": 1,
+              "spread": false,
+              "type": "Mesh",
+              "children": [],
+              "options": {
+                "position": [20.2265, 1.7393, 2.8601],
+                "rotation": [-90, 0, 0],
+                "scale": [100, 100, 100],
+                "renderOrder": 2,
+                "castShadow": true,
+                "receiveShadow": true,
+                "bloom": false
+              },
+              "show": true,
+              "parent": "root_chess_set_1k_0",
+              "events": [],
+              "matOptions": [
+                {
+                  "uuid": "7B6DAC74-6F85-4E8A-A8D9-C44A0B7EBEC6",
+                  "type": "MeshStandardMaterial",
+                  "name": "chess_set_pieces_white",
+                  "color": "#cccccc",
+                  "transparent": false,
+                  "opacity": 1,
+                  "map": "",
+                  "depthTest": true,
+                  "depthWrite": true,
+                  "wireframe": false,
+                  "side": 0,
+                  "extends": {
+                    "roughnessMap": "",
+                    "roughness": 1,
+                    "metalnessMap": "",
+                    "metalness": 0,
+                    "normalMap": "",
+                    "normalScale": [1, 1],
+                    "alphaMap": "",
+                    "lightMap": "",
+                    "lightMapIntensity": 1,
+                    "emissive": "#000000",
+                    "emissiveMap": "",
+                    "emissiveIntensity": 1,
+                    "aoMap": "",
+                    "aoMapIntensity": 1
+                  }
+                }
+              ]
+            },
+            {
+              "uuid": "root_chess_set_1k_0_piece_bishop_white_01",
+              "name": "piece_bishop_white_01",
+              "visible": true,
+              "selected": false,
+              "index": 1,
+              "spread": false,
+              "type": "Mesh",
+              "children": [],
+              "options": {
+                "position": [20.2265, 1.7393, 8.6489],
+                "rotation": [-90, 0, 0],
+                "scale": [100, 100, 100],
+                "renderOrder": 2,
+                "castShadow": true,
+                "receiveShadow": true,
+                "bloom": false
+              },
+              "show": true,
+              "parent": "root_chess_set_1k_0",
+              "events": [],
+              "matOptions": [
+                {
+                  "uuid": "E278C3FD-0334-473A-A56C-6ED4EC97DF18",
+                  "type": "MeshStandardMaterial",
+                  "name": "chess_set_pieces_white",
+                  "color": "#cccccc",
+                  "transparent": false,
+                  "opacity": 1,
+                  "map": "",
+                  "depthTest": true,
+                  "depthWrite": true,
+                  "wireframe": false,
+                  "side": 0,
+                  "extends": {
+                    "roughnessMap": "",
+                    "roughness": 1,
+                    "metalnessMap": "",
+                    "metalness": 0,
+                    "normalMap": "",
+                    "normalScale": [1, 1],
+                    "alphaMap": "",
+                    "lightMap": "",
+                    "lightMapIntensity": 1,
+                    "emissive": "#000000",
+                    "emissiveMap": "",
+                    "emissiveIntensity": 1,
+                    "aoMap": "",
+                    "aoMapIntensity": 1
+                  }
+                }
+              ]
+            },
+            {
+              "uuid": "root_chess_set_1k_0_piece_pawn_black_02",
+              "name": "piece_pawn_black_02",
+              "visible": true,
+              "selected": false,
+              "index": 1,
+              "spread": false,
+              "type": "Mesh",
+              "children": [],
+              "options": {
+                "position": [-14.4355, 1.7393, -14.5064],
+                "rotation": [-90, 0, 0],
+                "scale": [100, 100, 100],
+                "renderOrder": 2,
+                "castShadow": true,
+                "receiveShadow": true,
+                "bloom": false
+              },
+              "show": true,
+              "parent": "root_chess_set_1k_0",
+              "events": [],
+              "matOptions": [
+                {
+                  "uuid": "BB311E11-C99C-466C-81F1-CE9CE81F0204",
+                  "type": "MeshStandardMaterial",
+                  "name": "chess_set_pieces_black",
+                  "color": "#cccccc",
+                  "transparent": false,
+                  "opacity": 1,
+                  "map": "",
+                  "depthTest": true,
+                  "depthWrite": true,
+                  "wireframe": false,
+                  "side": 0,
+                  "extends": {
+                    "roughnessMap": "",
+                    "roughness": 1,
+                    "metalnessMap": "",
+                    "metalness": 0,
+                    "normalMap": "",
+                    "normalScale": [1, 1],
+                    "alphaMap": "",
+                    "lightMap": "",
+                    "lightMapIntensity": 1,
+                    "emissive": "#000000",
+                    "emissiveMap": "",
+                    "emissiveIntensity": 1,
+                    "aoMap": "",
+                    "aoMapIntensity": 1
+                  }
+                }
+              ]
+            },
+            {
+              "uuid": "root_chess_set_1k_0_piece_bishop_white_02",
+              "name": "piece_bishop_white_02",
+              "visible": true,
+              "selected": false,
+              "index": 1,
+              "spread": false,
+              "type": "Mesh",
+              "children": [],
+              "options": {
+                "position": [20.2265, 1.7393, -8.7176],
+                "rotation": [-90, 0, 0],
+                "scale": [100, 100, 100],
+                "renderOrder": 2,
+                "castShadow": true,
+                "receiveShadow": true,
+                "bloom": false
+              },
+              "show": true,
+              "parent": "root_chess_set_1k_0",
+              "events": [],
+              "matOptions": [
+                {
+                  "uuid": "6C5A42AE-834A-42E8-AC2C-AF70422A37B9",
+                  "type": "MeshStandardMaterial",
+                  "name": "chess_set_pieces_white",
+                  "color": "#cccccc",
+                  "transparent": false,
+                  "opacity": 1,
+                  "map": "",
+                  "depthTest": true,
+                  "depthWrite": true,
+                  "wireframe": false,
+                  "side": 0,
+                  "extends": {
+                    "roughnessMap": "",
+                    "roughness": 1,
+                    "metalnessMap": "",
+                    "metalness": 0,
+                    "normalMap": "",
+                    "normalScale": [1, 1],
+                    "alphaMap": "",
+                    "lightMap": "",
+                    "lightMapIntensity": 1,
+                    "emissive": "#000000",
+                    "emissiveMap": "",
+                    "emissiveIntensity": 1,
+                    "aoMap": "",
+                    "aoMapIntensity": 1
+                  }
+                }
+              ]
+            },
+            {
+              "uuid": "root_chess_set_1k_0_piece_rook_black_01",
+              "name": "piece_rook_black_01",
+              "visible": true,
+              "selected": false,
+              "index": 1,
+              "spread": false,
+              "type": "Mesh",
+              "children": [],
+              "options": {
+                "position": [-20.2243, 1.7393, -20.2952],
+                "rotation": [-90, 0, 0],
+                "scale": [100, 100, 100],
+                "renderOrder": 2,
+                "castShadow": true,
+                "receiveShadow": true,
+                "bloom": false
+              },
+              "show": true,
+              "parent": "root_chess_set_1k_0",
+              "events": [],
+              "matOptions": [
+                {
+                  "uuid": "DF2B3526-ACE7-4149-B4C9-0FD571A8B0A5",
+                  "type": "MeshStandardMaterial",
+                  "name": "chess_set_pieces_black",
+                  "color": "#cccccc",
+                  "transparent": false,
+                  "opacity": 1,
+                  "map": "",
+                  "depthTest": true,
+                  "depthWrite": true,
+                  "wireframe": false,
+                  "side": 0,
+                  "extends": {
+                    "roughnessMap": "",
+                    "roughness": 1,
+                    "metalnessMap": "",
+                    "metalness": 0,
+                    "normalMap": "",
+                    "normalScale": [1, 1],
+                    "alphaMap": "",
+                    "lightMap": "",
+                    "lightMapIntensity": 1,
+                    "emissive": "#000000",
+                    "emissiveMap": "",
+                    "emissiveIntensity": 1,
+                    "aoMap": "",
+                    "aoMapIntensity": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "options": {
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "scale": [1, 1, 1],
+            "renderOrder": 0
+          },
+          "show": true,
+          "parent": "",
+          "events": []
+        }
+      ],
+      "threeDimensionAnimation": [],
+      "threeDimensionInstanced": [],
+      "threeDimensionEnvironment": [
+        {
+          "uuid": -1,
+          "name": "Fog",
+          "type": "Fog",
+          "options": { "density": 0, "color": "#ffffff" }
+        },
+        {
+          "uuid": -1,
+          "name": "ToneMapping",
+          "type": "ToneMapping",
+          "options": { "exposure": 1, "type": 1 }
+        },
+        {
+          "uuid": -1,
+          "name": "Camera",
+          "type": "Camera",
+          "options": {
+            "position": [16.56, 48.29, 54.66],
+            "target": [-0.11, 0, 12.7],
+            "near": 0.001,
+            "far": 1000000,
+            "fov": 60,
+            "minDistance": 0,
+            "maxDistance": 100000,
+            "minPolarAngle": 0,
+            "maxPolarAngle": 90,
+            "zoomSpeed": 1,
+            "rotateSpeed": 1,
+            "panSpeed": 1,
+            "keyPanSpeed": 7,
+            "enableDamping": false,
+            "dampingFactor": 0.05,
+            "type": "orbit"
+          }
+        },
+        {
+          "uuid": -1,
+          "name": "FilterPass",
+          "type": "FilterPass",
+          "options": {
+            "enabled": false,
+            "hue": 0,
+            "saturation": 1,
+            "vibrance": 0,
+            "brightness": 0,
+            "contrast": 1
+          }
+        },
+        {
+          "uuid": -1,
+          "name": "GammaPass",
+          "type": "GammaPass",
+          "options": { "enabled": true, "factor": 2.2 }
+        },
+        {
+          "uuid": -1,
+          "name": "DOFPass",
+          "type": "DOFPass",
+          "options": {
+            "enabled": false,
+            "focus": 100,
+            "aperture": 0.00001,
+            "maxblur": 0.01
+          }
+        },
+        {
+          "uuid": -1,
+          "name": "OutlinePass",
+          "type": "OutlinePass",
+          "options": {
+            "enabled": true,
+            "edgeStrength": 3,
+            "edgeGlow": 0,
+            "edgeThickness": 1,
+            "pulsePeriod": 0,
+            "visibleEdgeColor": "#98e10f",
+            "hiddenEdgeColor": "#190a05"
+          }
+        },
+        {
+          "uuid": -1,
+          "name": "BloomPass",
+          "type": "BloomPass",
+          "options": {
+            "enabled": true,
+            "strength": 0.75,
+            "radius": 0.15,
+            "threshold": 0.035
+          }
+        },
+        {
+          "uuid": -1,
+          "name": "AmbientLight",
+          "type": "AmbientLight",
+          "options": { "visible": true, "color": "#ffffff", "intensity": 1 }
+        },
+        {
+          "uuid": -1,
+          "name": "HemiSphereLight",
+          "type": "HemiSphereLight",
+          "options": {
+            "visible": true,
+            "color": "#ffffff",
+            "groundColor": "#aaaaaa",
+            "intensity": 0,
+            "position": [0, 500, 0],
+            "showHelper": false,
+            "helperSize": 5
+          }
+        },
+        {
+          "uuid": -1,
+          "name": "DirectionLights",
+          "type": "DirectionLights",
+          "children": []
+        },
+        {
+          "uuid": -1,
+          "name": "PointLights",
+          "type": "PointLights",
+          "children": []
+        },
+        {
+          "uuid": -1,
+          "name": "SpotLights",
+          "type": "SpotLights",
+          "children": [],
+          "options": {}
+        },
+        {
+          "uuid": -1,
+          "name": "HDR",
+          "type": "HDR",
+          "options": { "value": [] }
+        },
+        {
+          "uuid": -1,
+          "name": "Background",
+          "type": "Background",
+          "options": {
+            "color": "#000000",
+            "texture": "",
+            "panorama": [
+              "right.jpg",
+              "left.jpg",
+              "shang.jpg",
+              "xia.jpg",
+              "top.jpg",
+              "back.jpg"
+            ],
+            "panoramaEncoding": 3000,
+            "panoramaScale": 1,
+            "panoramaRotation": [0, 0, 0],
+            "panoramaPosition": [0, 0, 0],
+            "panoramaFog": false,
+            "type": "panorama",
+            "textureEncoding": 3000,
+            "textureWrapping": 1000,
+            "textureRepeat": [1, 1]
+          }
+        },
+        {
+          "uuid": -1,
+          "name": "Shadow",
+          "type": "Shadow",
+          "options": { "enabled": true, "type": 2 }
+        },
+        {
+          "uuid": -1,
+          "name": "Stats",
+          "type": "Stats",
+          "options": { "enabled": true }
+        }
+      ],
+      "threeDimensionElement": [
+        { "uuid": -2, "name": "Tag", "type": "Tag", "children": [] },
+        { "uuid": -2, "name": "Popup", "type": "Popup", "children": [] },
+        { "uuid": -2, "name": "Road", "type": "Road", "children": [] },
+        { "uuid": -2, "name": "FlyLine", "type": "FlyLine", "children": [] },
+        { "uuid": -2, "name": "Water", "type": "Water", "children": [] },
+        {
+          "uuid": -2,
+          "name": "Particles",
+          "type": "Particles",
+          "children": []
+        },
+        {
+          "uuid": -2,
+          "name": "Reflector",
+          "type": "Reflector",
+          "children": []
+        },
+        { "uuid": -2, "name": "Floor", "type": "Floor", "children": [] }
+      ],
+      "twoDimension": []
+    }
+  ],
+  "fileList": [{ "file": "chess_set_1k.fbx", "id": 0 }]
+}
