@@ -37,7 +37,8 @@ const draw = () => {
     url: "medieval_fantasy_book.glb",
     callback: (gltf) => {
       console.log(gltf);
-      threeTool.utils.autoFitCameraToModel(gltf.scene,0.9)
+      threeTool.utils.autoFitCameraToModel(gltf.scene,0.9); // 设置预览模型视角
+      threeTool.utils.playModelAnimation(gltf);
     },
   });
 };

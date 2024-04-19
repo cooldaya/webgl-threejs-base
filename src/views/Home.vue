@@ -22,7 +22,7 @@
 <script setup>
 import { ref, onMounted } from "vue";
 
-const currentComp = ref("Demo8");
+const currentComp = ref("Demo9");
 const demos = [
   {
     label: "多场景渲染",
@@ -55,6 +55,10 @@ const demos = [
   {
     label:'Loader 加载模型',
     comp:'Demo8'
+  },
+  {
+    label:'关键帧动画',
+    comp:'Demo9'
   }
 ];
 </script>

@@ -420,6 +420,22 @@ export default class ThreeTool {
             // this._scene.add(boxHelper);
           },
       ],
+      ['playModelAnimation',()=>(gltf)=>{
+        const model = gltf.scene;
+        const mixer = new THREE.AnimationMixer( model );
+        const clipAction = mixer.clipAction( gltf.animations[ 0 ] );
+        clipAction.play();
+        const clock = new THREE.Clock();
+        this.callOn('renderUpdate', (time) => {
+          const frameT = clock.getDelta();
+          mixer.update( frameT );
+        });
+
+        return {
+          mixer,
+          clipAction,clock
+        }
+      }]
     ]);
 
     for (let [key, genFunc] of toolsMap) {

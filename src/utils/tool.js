@@ -35,6 +35,7 @@ export default class ThreeTool {
   utils = {}; // 工具集
   pickEvens = []; // 点击事件集合
 
+
   // 构造函数
   constructor(config = {}) {
     this.setupByConfig(config);
