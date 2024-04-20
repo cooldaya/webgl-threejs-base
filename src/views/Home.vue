@@ -22,7 +22,7 @@
 <script setup>
 import { ref, onMounted } from "vue";
 
-const currentComp = ref("Demo9");
+const currentComp = ref("Demo11");
 const demos = [
   {
     label: "多场景渲染",
@@ -33,33 +33,41 @@ const demos = [
     comp: "Demo2",
   },
   {
-    label:'鼠标事件交互',
-    comp: 'Demo3'
+    label: "鼠标事件交互",
+    comp: "Demo3",
   },
   {
-    label:"光照/阴影",
-    comp:"Demo4"
+    label: "光照/阴影",
+    comp: "Demo4",
   },
   {
-    label:"材质",
-    comp:"Demo5"
+    label: "材质",
+    comp: "Demo5",
   },
   {
-    label:"纹理",
-    comp:"Demo6"
+    label: "纹理",
+    comp: "Demo6",
   },
   {
-    label:'信息框/标记',
-    comp:'Demo7'
+    label: "信息框/标记",
+    comp: "Demo7",
   },
   {
-    label:'Loader 加载模型',
-    comp:'Demo8'
+    label: "Loader 加载模型",
+    comp: "Demo8",
   },
   {
-    label:'关键帧动画',
-    comp:'Demo9'
-  }
+    label: "关键帧动画-颜色与位置",
+    comp: "Demo9",
+  },
+  {
+    label: "关键帧动画-形状",
+    comp: "Demo10",
+  },
+  {
+    label: "bufferGeometry 多色立方体",
+    comp: "Demo11",
+  },
 ];
 </script>
 
@@ -101,7 +109,7 @@ const demos = [
     }
   }
 }
-.demo-wrap{
+.demo-wrap {
   margin-top: 40px;
   outline: dashed 1px #ccc;
   width: 1200px;

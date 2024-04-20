@@ -1,6 +1,9 @@
 <template>
   <div class="demo9">
     <div class="canvas-wrap" ref="canvasWrapRef"></div>
+    <div class="controls">
+      <button id="playBtn">播放</button>
+    </div>
   </div>
 </template>
 
@@ -47,11 +50,11 @@ const draw = () => {
 
     const clipAction = mixer.clipAction(clip);
 
-    clipAction.play();
-    //不循环播放
     clipAction.loop = THREE.LoopOnce;
-    // 物体状态停留在动画结束的时候
-    clipAction.clampWhenFinished = true;
+
+    clipAction.play();
+    clipAction.paused = true; //暂停状态
+    //不循环播放
 
     const clock = new THREE.Clock();
     threeTool.callOn("renderUpdate", () => {
@@ -59,14 +62,27 @@ const draw = () => {
       // 更新播放器相关的时间
       mixer.update(frameT);
     });
-    threeTool._gui.add(clipAction, "timeScale", 0, 6);
-    threeTool._gui.add(clipAction, 'time', 0, 6).step(0.1);
 
+    const bu = document.getElementById("playBtn");
+    bu.addEventListener("click", function () {
+      // AnimationAction.paused默认值false，设置为true，可以临时暂停动画
+      if (clipAction.paused) {
+        //暂停状态
+        clipAction.paused = false; //切换为播放状态
+        bu.innerHTML = "暂停"; // 如果改变为播放状态，按钮文字设置为“暂停”
+      } else {
+        //播放状态
+        clipAction.paused = true; //切换为暂停状态
+        bu.innerHTML = "播放"; // 如果改变为暂停状态，按钮文字设置为“播放”
+      }
+    });
 
-    setTimeout(() => {
-      clipAction.paused = true;
-      clipAction.time = 1;//物体状态为动画3秒对应状态
-    }, 4000);
+    // 动画播放完成事件
+    mixer.addEventListener("finished", function () {
+      bu.innerHTML = "播放"; //播放完成，按钮显示为“播放”
+      clipAction.reset(); //重新开始新的动画播放
+      clipAction.paused = true; //切换为暂停状态
+    });
   });
 };
 
@@ -77,9 +93,25 @@ onMounted(() => {
 
 <style lang="less" scoped>
 .demo9 {
+  position: relative;
   .canvas-wrap {
     width: 1200px;
     height: 600px;
+  }
+  .controls{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    button{
+      background-color: aquamarine;
+
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      color: white;
+
+      font-size: 16px;
+    }
   }
 }
 </style>

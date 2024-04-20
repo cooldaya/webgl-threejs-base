@@ -103,9 +103,10 @@ export default class ThreeTool {
 
     // 渲染器
     this._renderer = new THREE.WebGLRenderer({
-      antialias: true,
+      antialias: true, // 抗锯齿
       canvas: this._canvas,
     });
+    this._renderer.setPixelRatio(window.devicePixelRatio);
     this._renderer.setSize(canvasRect.width, canvasRect.height);
 
     this._renderer.setClearColor(0x000000, 1);
