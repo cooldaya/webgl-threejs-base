@@ -22,7 +22,7 @@
 <script setup>
 import { ref, onMounted } from "vue";
 
-const currentComp = ref("Demo11");
+const currentComp = ref("Demo12");
 const demos = [
   {
     label: "多场景渲染",
@@ -31,6 +31,10 @@ const demos = [
   {
     label: "基础三维场景的构成",
     comp: "Demo2",
+  },
+  {
+    label: "bufferGeometry 多色立方体",
+    comp: "Demo11",
   },
   {
     label: "鼠标事件交互",
@@ -65,8 +69,8 @@ const demos = [
     comp: "Demo10",
   },
   {
-    label: "bufferGeometry 多色立方体",
-    comp: "Demo11",
+    label: "骨骼动画",
+    comp: "Demo12",
   },
 ];
 </script>

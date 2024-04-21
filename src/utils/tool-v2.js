@@ -99,12 +99,14 @@ export default class ThreeTool {
       1,
       10000
     );
-    this._camera.position.set(500, 500, 500);
+    this._camera.position.set(4, 4, 6);
 
     // 渲染器
     this._renderer = new THREE.WebGLRenderer({
       antialias: true, // 抗锯齿
       canvas: this._canvas,
+      // 设置对数深度缓冲区，优化深度冲突问题
+      // logarithmicDepthBuffer: true,
     });
     this._renderer.setPixelRatio(window.devicePixelRatio);
     this._renderer.setSize(canvasRect.width, canvasRect.height);
@@ -421,22 +423,32 @@ export default class ThreeTool {
             // this._scene.add(boxHelper);
           },
       ],
-      ['playModelAnimation',()=>(gltf)=>{
-        const model = gltf.scene;
-        const mixer = new THREE.AnimationMixer( model );
-        const clipAction = mixer.clipAction( gltf.animations[ 0 ] );
-        clipAction.play();
-        const clock = new THREE.Clock();
-        this.callOn('renderUpdate', (time) => {
-          const frameT = clock.getDelta();
-          mixer.update( frameT );
-        });
-
-        return {
-          mixer,
-          clipAction,clock
-        }
-      }]
+      [
+        "playModelAnimation",
+        () => (model, clip,clipActionInitFn) => {
+          const mixer = new THREE.AnimationMixer(model);
+          const clipAction = mixer.clipAction(clip);
+          clipAction.play();
+          clipActionInitFn(clipAction)
+          const clock = new THREE.Clock();
+          this.callOn("renderUpdate", (time) => {
+            const frameT = clock.getDelta();
+            mixer.update(frameT);
+          });
+          return {
+            mixer,
+            clipAction,
+            clock,
+          };
+        },
+      ],
+      [
+        "playGltfAnimation",
+        () => (gltf) => {
+          const model = gltf.scene;
+          return this.playModelAnimation(model, gltf.animations[0]);
+        },
+      ],
     ]);
 
     for (let [key, genFunc] of toolsMap) {
