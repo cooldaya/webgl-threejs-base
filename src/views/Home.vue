@@ -22,7 +22,7 @@
 <script setup>
 import { ref, onMounted } from "vue";
 
-const currentComp = ref("Demo13");
+const currentComp = ref("Demo14");
 const demos = [
   {
     label: "多场景渲染",
@@ -35,6 +35,10 @@ const demos = [
   {
     label: "bufferGeometry 多色立方体",
     comp: "Demo11",
+  },
+  {
+    label: "InstancedBufferGeometry 优化",
+    comp: "Demo14",
   },
   {
     label: "鼠标事件交互",
@@ -73,9 +77,9 @@ const demos = [
     comp: "Demo12",
   },
   {
-    label:'粒子 points',
-    comp: 'Demo13'
-  }
+    label: "粒子 points",
+    comp: "Demo13",
+  },
 ];
 </script>
 
@@ -99,6 +103,7 @@ const demos = [
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  width: 80%;
 
   li {
     padding: 4px 10px;
