@@ -21,7 +21,7 @@ const draw = () => {
   const canvasWrap = canvasWrapRef.value;
   const threeTool = new ThreeTool({
     cwe: canvasWrap,
-    showHelper: 20,
+    showHelper: 500,
   });
 
   const getTexture = () => {
@@ -58,12 +58,14 @@ const draw = () => {
       [0.3, 0.3, 1],
     ];
 
-    const count = 80;
-    const distance = 10;
-    const color1 = color("white");
-    const color2 = color("black");
+    const count = 100000;
+    const distance = 500;
+    const desiredHeight = 0.01;
 
-    const buildMaterial = new THREE.MeshBasicMaterial({ mpa: getTexture() });
+    const buildMaterial = new THREE.MeshBasicMaterial({
+      color: "green",
+      side: THREE.DoubleSide,
+    });
     types.forEach((type) => {
       const buildGeometry = new THREE.BoxGeometry(...type);
       const buildMesh = new THREE.InstancedMesh(
@@ -75,7 +77,7 @@ const draw = () => {
       for (let i = 0; i < count; i++) {
         dummy.position.set(
           randomFloat(-distance, distance),
-          0.5,
+          desiredHeight + (type[1] * 1) / 2,
           randomFloat(-distance, distance)
         );
         dummy.updateMatrix();
@@ -84,6 +86,9 @@ const draw = () => {
       scene.add(buildMesh);
     });
   });
+  threeTool._scene.fog = new THREE.Fog("#ccc", 1, 16);
+  threeTool._controls.maxPolarAngle = 1.57;
+  threeTool._controls.minPolarAngle = 0.4;
 };
 
 onMounted(() => {

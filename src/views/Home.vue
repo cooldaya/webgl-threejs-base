@@ -22,7 +22,7 @@
 <script setup>
 import { ref, onMounted } from "vue";
 
-const currentComp = ref("Demo15");
+const currentComp = ref("Demo17");
 const demos = [
   {
     label: "多场景渲染",
@@ -83,6 +83,14 @@ const demos = [
   {
     label: "fog 雾",
     comp: "Demo15",
+  },
+  {
+    label: "天空球",
+    comp: "Demo16",
+  },
+  {
+    label: "水面",
+    comp: "Demo17",
   },
 ];
 </script>

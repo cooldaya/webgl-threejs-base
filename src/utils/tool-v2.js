@@ -8,6 +8,7 @@ import {
   CSS2DRenderer,
   CSS2DObject,
 } from "three/examples/jsm/renderers/CSS2DRenderer.js";
+import { RGBELoader } from "three/examples/jsm/loaders/RGBELoader.js";
 
 // 引入CSS3渲染器CSS3DRenderer
 import {
@@ -22,6 +23,7 @@ export default class ThreeTool {
   _scene = null;
   _camera = null;
   _renderer = null;
+  _skybox = null;
   _css2dRenderer = null;
   _css2DObjectDefaultGroup = null;
 
@@ -56,6 +58,7 @@ export default class ThreeTool {
       showGUI: false,
       neededRender: false,
       interactive: true,
+      showFullScreenBtn:true,
     };
     const initConfig = Object.assign({}, defaultConfig, config);
 
@@ -68,6 +71,7 @@ export default class ThreeTool {
       neededRender,
       isClick,
       interactive,
+      showFullScreenBtn,
     } = (this._initConfig = initConfig);
 
     this._init(canvasWrapperElement);
@@ -81,6 +85,7 @@ export default class ThreeTool {
     showFps && this._showFps();
     showHelper && this._showHelper(showHelper);
     showGUI && this._showGUI();
+    showFullScreenBtn &&this._addFullscreen();
   }
 
   // 初始化
@@ -425,11 +430,10 @@ export default class ThreeTool {
       ],
       [
         "playModelAnimation",
-        () => (model, clip,clipActionInitFn) => {
+        () => (model, clip) => {
           const mixer = new THREE.AnimationMixer(model);
           const clipAction = mixer.clipAction(clip);
           clipAction.play();
-          clipActionInitFn(clipAction)
           const clock = new THREE.Clock();
           this.callOn("renderUpdate", (time) => {
             const frameT = clock.getDelta();
@@ -446,7 +450,59 @@ export default class ThreeTool {
         "playGltfAnimation",
         () => (gltf) => {
           const model = gltf.scene;
-          return this.playModelAnimation(model, gltf.animations[0]);
+          return this.utils.playModelAnimation(model, gltf.animations[0]);
+        },
+      ],
+      [
+        "addSkyBox",
+        () => {
+          const handleMap = new Map([
+            [
+              "cube",
+              (urls, config = {}) => {
+                const scene = this._scene;
+                const loader = new THREE.CubeTextureLoader();
+                const textureCube = loader.load(urls);
+                scene.background = textureCube; // 正常
+                scene.environment = textureCube; // 反射
+              },
+            ],
+            [
+              "hdr",
+              (url) => {
+                const hdrLoader = new RGBELoader();
+                hdrLoader.load(url, (texture) => {
+                  const scene = this._scene;
+                  // 环境贴图加载完成
+                  texture.mapping = THREE.EquirectangularReflectionMapping;
+                  const hdrMaterial = new THREE.MeshStandardMaterial({
+                    envMap: texture,
+                    color: 0xffffff,
+                    metalness: 1,
+                    roughness: 0.1,
+                  });
+                  const skyboxGeo = new THREE.SphereGeometry(1000, 32, 32);
+                  const skybox = new THREE.Mesh(skyboxGeo, hdrMaterial);
+                  scene.add(skybox);
+
+                  const pmremGenerator = new THREE.PMREMGenerator(
+                    this._renderer
+                  );
+                  const renderTarget =
+                    pmremGenerator.fromEquirectangular(texture);
+
+                  scene.background = renderTarget.texture;
+                  scene.environment = renderTarget.texture;
+                  scene.add(directionalLight);
+                });
+              },
+            ],
+          ]);
+          return (url, config = {}) => {
+            const isUrlArrays = Array.isArray(url);
+            const { type = isUrlArrays ? "cube" : "hdr" } = config;
+            handleMap.get(type)(url, config);
+          };
         },
       ],
     ]);
@@ -534,6 +590,29 @@ export default class ThreeTool {
     });
 
     this._canvasWrapperElement.append(gui.domElement);
+  }
+
+  // 添加全屏
+
+  _addFullscreen() {
+    const svgHtml = `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" rx="2"/></svg>`;
+    const div = document.createElement("div");
+    div.innerHTML = svgHtml;
+    Object.assign(div.style, {
+      position: "absolute",
+      right: "5px",
+      top: "5px",
+      zIndex: "1001",
+      cursor: "pointer",
+    });
+    this._canvasWrapperElement.appendChild(div);
+    div.addEventListener("click", () => {
+      if (document.fullscreenElement) {
+        document.exitFullscreen();
+      } else {
+        this._canvasWrapperElement.requestFullscreen();
+      }
+    });
   }
 
   // 获取工具信息

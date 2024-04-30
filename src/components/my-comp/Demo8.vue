@@ -11,6 +11,7 @@ import { effect, onMounted, ref } from "vue";
 import * as THREE from "three";
 import getTextureImg from "@/assets/textures/cube6p/getImg.js";
 import getModelUrl from "@/assets/models/getModelUrl.js";
+import { getHdr } from "@/assets/imgs/index.js";
 
 const props = defineProps({});
 
@@ -23,22 +24,14 @@ const draw = () => {
     showHelper: 20,
     showGUI: true,
   });
-  // threeTool.utils.addMesh(({ scene, renderer, camera }, THREE) => {
-  //   const geometry = new THREE.BoxGeometry(1, 1, 1);
-  //   const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-  //   const cube = new THREE.Mesh(geometry, material);
-  //   scene.add(cube);
-
-  //   camera.position.set(4, 6, 6);
-  // });
   threeTool._scene.add(new THREE.AmbientLight(0xffffff, 5));
   threeTool.utils.importGltfModel({
     dir: "/assets/3d/model/",
     url: "medieval_fantasy_book.glb",
     callback: (gltf) => {
       console.log(gltf);
-      threeTool.utils.autoFitCameraToModel(gltf.scene,0.9); // 设置预览模型视角
-      threeTool.utils.playModelAnimation(gltf);
+      threeTool.utils.autoFitCameraToModel(gltf.scene, 0.9); // 设置预览模型视角
+      threeTool.utils.playGltfAnimation(gltf);
     },
   });
 };
