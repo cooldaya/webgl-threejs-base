@@ -22,7 +22,7 @@
 <script setup>
 import { ref, onMounted } from "vue";
 
-const currentComp = ref("Demo15");
+const currentComp = ref("Demo23");
 const demos = [
   {
     label: "多场景渲染",
@@ -83,6 +83,22 @@ const demos = [
   {
     label: "fog 雾",
     comp: "Demo15",
+  },
+  {
+    label: "ammo-physics 物理引擎",
+    comp: "Demo20",
+  },
+  {
+    label: "加载环境",
+    comp: "Demo21",
+  },
+  {
+    label: "clipping 物体裁剪",
+    comp: "Demo22",
+  },
+  {
+    label: "pdb 加载",
+    comp: "Demo23",
   },
 ];
 </script>
