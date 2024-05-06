@@ -419,6 +419,7 @@ export default class ThreeTool {
             );
             camera.lookAt(boxCenter);
             console.log("camera position", camera.position);
+            return box;
 
             // 可视化包围盒
             // const boxHelper = new THREE.Box3Helper(
@@ -658,5 +659,38 @@ export default class ThreeTool {
       (eventObj) => eventObj.callback === callback
     );
     if (index !== -1) events.splice(index, 1);
+  }
+
+  // 销毁
+  destroy() {
+    this._scene.traverse((child) => {
+      if (child.material) {
+        child.material.dispose();
+      }
+      if (child.geometry) {
+        child.geometry.dispose();
+      }
+      child = null;
+    });
+
+    this._renderer.forceContextLoss();
+    this._renderer.dispose();
+    this._scene.clear();
+    this._renderer = null;
+    this._scene = null;
+    this._camera = null;
+    this._controls = null;
+    this._stats = null;
+    this._gui = null;
+    this._canvas = null;
+    this._css2DObjectDefaultGroup = null;
+    this._css3DObjectDefaultGroup = null;
+    this._css3DSpriteDefaultGroup = null;
+    this._renderUpdateFuncs = null;
+    this._clickEvents = null;
+    this._hoverEvents = null; 
+    this.utils = null;
+    this._canvasWrapperElement.remove();
+
   }
 }
