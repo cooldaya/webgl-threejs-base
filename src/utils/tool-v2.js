@@ -16,6 +16,9 @@ import {
   CSS3DObject,
   CSS3DSprite,
 } from "three/addons/renderers/CSS3DRenderer.js";
+import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer.js";
+import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass.js";
+import { BloomPass } from "three/examples/jsm/postprocessing/BloomPass.js";
 
 export default class ThreeTool {
   _initConfig = null; // 初始化配置
@@ -58,7 +61,8 @@ export default class ThreeTool {
       showGUI: false,
       neededRender: false,
       interactive: true,
-      showFullScreenBtn:true,
+      showFullScreenBtn: true,
+      usePostprocessing: false,
     };
     const initConfig = Object.assign({}, defaultConfig, config);
 
@@ -72,11 +76,16 @@ export default class ThreeTool {
       isClick,
       interactive,
       showFullScreenBtn,
+      usePostprocessing,
     } = (this._initConfig = initConfig);
 
     this._init(canvasWrapperElement);
     this._addResizeListener();
     this._createUtils(); // 初始化工具函数集
+
+    if (usePostprocessing) {
+      this._initPostprocessing();
+    }
 
     this._sceneRender(neededRender); // 场景渲染
 
@@ -85,7 +94,7 @@ export default class ThreeTool {
     showFps && this._showFps();
     showHelper && this._showHelper(showHelper);
     showGUI && this._showGUI();
-    showFullScreenBtn &&this._addFullscreen();
+    showFullScreenBtn && this._addFullscreen();
   }
 
   // 初始化
@@ -166,6 +175,25 @@ export default class ThreeTool {
     };
   }
 
+  // 初始化后期处理
+  _initPostprocessing() {
+    this._renderer.autoClear = false;
+    // 后期处理
+    this._composer = new EffectComposer(this._renderer);
+    // 添加RenderPass，将场景渲染到屏幕
+    const renderPass = new RenderPass(this._scene, this._camera);
+    this._composer.addPass(renderPass);
+  }
+
+  addPass(pass) {
+    if (!this._initConfig.usePostprocessing)
+      return console.warn("请先开启后期处理功能");
+    if (this._currentRenderPass) this._currentRenderPass.renderToScreen = false;
+    this._composer.addPass(pass);
+    pass.renderToScreen = true;
+    this._currentRenderPass = pass;
+  }
+
   // 创建canvas元素
   _setupCanvas(elem) {
     // 放置canvas 元素
@@ -186,7 +214,12 @@ export default class ThreeTool {
       this._controls.update();
       this._stats && this._stats.update();
       this._renderUpdateFuncs.forEach((func) => func(time)); // 执行渲染更新函数集
-      this._renderer.render(this._scene, this._camera);
+      if (this._initConfig.usePostprocessing) {
+        this._renderer.clear();
+        this._composer.render(0.1);
+      } else {
+        this._renderer.render(this._scene, this._camera);
+      }
       this._css2dRenderer.render(this._scene, this._camera);
       this._css3dRenderer.render(this._scene, this._camera);
     };
@@ -247,9 +280,9 @@ export default class ThreeTool {
         const intersects = rayRaster.intersectObjects(meshes);
         const current = intersects[0];
         if (
-          current &&
-          current !== eventObj.curObj &&
-          current.instanceId !== eventObj.curObj?.instanceId
+          (current && current !== eventObj.curObj) ||
+          (current.instanceId &&
+            current.instanceId !== eventObj.curObj?.instanceId)
         ) {
           eventObj.preObj = eventObj.curObj;
           eventObj.curObj = current;
@@ -568,6 +601,7 @@ export default class ThreeTool {
     const gridHelper = new THREE.GridHelper(size, size);
     gridHelper.material.opacity = 0.4;
     gridHelper.material.transparent = true;
+    gridHelper.position.y = -0.01;
     this._scene.add(gridHelper);
 
     // 坐标系
@@ -626,6 +660,8 @@ export default class ThreeTool {
       utils: this.utils,
       stats: this._stats,
       gui: this._gui,
+      config: this._initConfig,
+      canvas: this._canvas,
     };
   }
 
@@ -688,9 +724,8 @@ export default class ThreeTool {
     this._css3DSpriteDefaultGroup = null;
     this._renderUpdateFuncs = null;
     this._clickEvents = null;
-    this._hoverEvents = null; 
+    this._hoverEvents = null;
     this.utils = null;
     this._canvasWrapperElement.remove();
-
   }
 }

@@ -6,8 +6,8 @@
 
 <script setup>
 import ThreeTool from "@/utils/tool-v2";
-import { setupCanvas } from "@/utils/canvas";
 import { onMounted, ref } from "vue";
+import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 
 const props = defineProps({});
 
@@ -54,21 +54,22 @@ const draw = () => {
     directLight.position.set(2, 4, 4);
     scene.add(directLight);
 
+    const outputPass = new OutputPass();
     // 添加点击事件
     const clickHandler = (eventObj) => {
-      const {curObj,preObj,intersects} = eventObj;
+      const { curObj, preObj, intersects } = eventObj;
 
-      if(curObj){
+      if (curObj) {
         const instanceId = curObj.instanceId;
         const instancedMesh = curObj.object;
-        instancedMesh.setColorAt(instanceId, new THREE.Color("rgb(255, 0, 0)"))
-        if(preObj) instancedMesh.setColorAt(preObj.instanceId, defaultColor)
+        instancedMesh.setColorAt(instanceId, new THREE.Color("rgb(255, 0, 0)"));
+        if (preObj) instancedMesh.setColorAt(preObj.instanceId, defaultColor);
         instancedMesh.instanceColor.needsUpdate = true;
       }
-    }
+    };
     // threeTool.addPickEventListener([meshes], clickHandler);
 
-    threeTool.eventOn('hover',clickHandler,[meshes])
+    threeTool.eventOn("click", clickHandler, [meshes]);
   });
 };
 

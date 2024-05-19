@@ -1,5 +1,5 @@
-<script setup lang="ts">
-import Scene from '@/views/Scene.vue'
+<script setup>
+
 </script>
 
 <template>

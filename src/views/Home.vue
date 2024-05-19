@@ -20,9 +20,9 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from "vue";
+import { ref } from "vue";
 
-const currentComp = ref("Demo23");
+const currentComp = ref("Demo31");
 const demos = [
   {
     label: "多场景渲染",
@@ -105,6 +105,30 @@ const demos = [
   {
     label: "pdb 加载",
     comp: "Demo23",
+  },
+  {
+    label: "模型 animations morph",
+    comp: "Demo26",
+  },
+  {
+    label: "天空盒 图片裁切",
+    comp: "Demo27",
+  },
+  {
+    label: "water sky",
+    comp: "Demo28",
+  },
+  {
+    label: "shader 着色器",
+    comp: "Demo29",
+  },
+  {
+    label: "outlinePass",
+    comp: "Demo30",
+  },
+  {
+    label: "ammojs 物理引擎",
+    comp: "Demo31",
   },
 ];
 </script>
